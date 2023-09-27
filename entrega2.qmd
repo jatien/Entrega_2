@@ -138,3 +138,14 @@ ggplot(subset(mpg, drv == "r"), aes(x = cty, fill = drv)) +
     y = "Densidad"
   )
 ```
+
+```{r}
+
+ggplot(mpg, aes(x = drv, y = cty, fill = drv)) +
+  geom_violin() +
+  labs(
+    title = "City Fuel Efficiency by Drive System",
+    x = "Drive System",
+    y = "City MPG"
+  )
+```
